@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.navbar li a {
+    margin: 0 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar li  a:hover{
+    color: salmon;
+}

@@ -1,0 +1,52 @@
+.container {
+    background-color: #495E57;
+    padding: 5em 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 500px;
+}
+
+/*Left column */
+
+.left {
+    display: flex;
+    grid-column: 1;
+    flex-direction: column;
+    margin: 0 7em;
+}
+
+.left > * {
+    margin: 10px 0;
+}
+
+.title {
+    color: #F4CE14;
+    font-weight: bold;
+    font-size: 64px;
+}
+
+.subtitle {
+    color: white;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.paragraph {
+    color: #EDEFEE;
+    font-size: 16px;
+}
+
+/*Right column */
+.right {
+    grid-column: 2;
+    justify-content: center;
+    overflow: visible;
+}
+
+
+
+.image {
+    width: 25em;
+    height: auto;
+    border-radius: 16px;
+}
