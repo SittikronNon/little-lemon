@@ -4,7 +4,7 @@ import navbar from '../styles/Navbar.module.css'
 import { Link } from "react-router-dom";
 const Navbar = () => {
     return (
-        <nav >
+        <nav role="navigation" >
             <img src={logo} alt=''/>
             <ul className={navbar.navbar}>
                 <li><Link to="/">Home</Link></li>
