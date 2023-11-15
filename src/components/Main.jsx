@@ -88,7 +88,7 @@ const Main = () => {
 
     //TO DO****************************************************************************************************************************
     //useReducer
-    const initializeTimes = {time: []};
+    const initializeTimes = {time: ''};
     const [state, dispatch] = useReducer(updateTimes, initializeTimes)
 
     const dateHandler = (e) => {
@@ -106,6 +106,7 @@ const Main = () => {
         occasion: e.target.value,
       })
     }
+
 
 
     return (

@@ -19,6 +19,7 @@ const useSubmitForm = () => {
             if (random < 0.5) {
                 throw new Error("Something went wrong");
             } else {
+                console.log(data)
                 alert("Your table has been reserved! ")
                 navigate("/reservations/confirmed-booking")
                 setIsLoading(false);

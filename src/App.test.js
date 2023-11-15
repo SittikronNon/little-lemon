@@ -1,29 +1,18 @@
-import { render, screen, fireEvent } from '@testing-library/react';
-
-import Main from './components/Main';
+// MyComponent.test.js
+import React from 'react';
+import { render, screen, fireEvent} from '@testing-library/react';
 import App from './App';
 
-describe("writing some random tests", () => {
-  test('renders the reserve page', () => {
-    render(<App />);
-    const reserveButton = screen.getByText(/Reserve a table/);
-    fireEvent.click(reserveButton);
+test('renders MyComponent', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/Reserve/);
+  expect(linkElement).toBeInTheDocument();
+});
 
-    const newPage = screen.getByText(/Reserve a table/);
-    expect(newPage).toBeDisabled();
+test('navigate to other components', () => {
+  render(<App />);
+  const reservationPage = screen.getByText(/Reserve a table/);
+  fireEvent.click(reservationPage);
 
-
-  });
-
-  test('finding the input', () => {
-    render(<App />);
-    const reserveButton = screen.getByText(/Reserve a table/);
-    fireEvent.click(reserveButton);
-
-    const timeInput = screen.getByPlaceholderText(/Time/)
-    expect(timeInput).toBeInTheDocument();
-  });
-
-  
-})
-
+  expect(screen.getByTestId("submit")).toBeInTheDocument();
+});
