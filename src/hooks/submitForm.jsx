@@ -1,5 +1,4 @@
 import { useState } from "react";
-import ConfirmedBooking from "../components/Reservation/ConfirmedBooking";
 import { useNavigate } from "react-router-dom";
 
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -17,11 +16,11 @@ const useSubmitForm = () => {
         try {
             await wait(2000);
             if (random < 0.5) {
+                alert("Something went wrong, please try again!")
                 throw new Error("Something went wrong");
             } else {
-                console.log(data)
                 alert("Your table has been reserved! ")
-                navigate("/reservations/confirmed-booking")
+                navigate("/reservations/confirmed-booking", {state: data})
                 setIsLoading(false);
             }
         } catch (error) {

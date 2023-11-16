@@ -7,7 +7,7 @@ const Testimonials = () => {
     <VStack backgroundColor='#495E57' h='550px'>
       <Heading mt='40px' color='#F4CE14' mb='40px'>Testimonials</Heading>
       <HStack>
-        <Box h='250px' width='250px' backgroundColor='#fff'>
+        <Box h='250px' width='250px' backgroundColor='#fff' borderRadius='6px'>
           <Heading as='h4' size='md'>Rating</Heading>
           <HStack>
             <Image width='150px' src={alex} />
@@ -15,7 +15,7 @@ const Testimonials = () => {
           </HStack>
           <Text>review texts</Text>
         </Box>
-        <Box h='250px' width='250px' backgroundColor='#fff'>
+        <Box h='250px' width='250px' backgroundColor='#fff' borderRadius='6px'>
           <Heading as='h4' size='md'>Rating</Heading>
           <HStack>
             <Image width='150px' src={alex} />
@@ -23,7 +23,7 @@ const Testimonials = () => {
           </HStack>
           <Text>review texts</Text>
         </Box>
-        <Box h='250px' width='250px' backgroundColor='#fff'>
+        <Box h='250px' width='250px' backgroundColor='#fff' borderRadius='6px'>
           <Heading as='h4' size='md'>Rating</Heading>
           <HStack>
             <Image width='150px' src={alex} />
@@ -31,7 +31,7 @@ const Testimonials = () => {
           </HStack>
           <Text>review texts</Text>
         </Box>
-        <Box h='250px' width='250px' backgroundColor='#fff'>
+        <Box h='250px' width='250px' backgroundColor='#fff' borderRadius='6px'>
           <Heading as='h4' size='md'>Rating</Heading>
           <HStack>
             <Image width='150px' src={alex} />
